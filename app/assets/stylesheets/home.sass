@@ -1,16 +1,29 @@
 @import "variables"
 
+.container
+  margin: 0 auto
+  text-align: center
+
 .blue
   background-color: $color-blue
 
 .box
-  display: inline
+  display: inline-block
   width: 200px
+  height: 300px
+  padding: 1em 0.5em
   color: $color-white
+  text-align: center
 
 .header
   font-size: $type-header
+  font-family: $type-face
+
+.fas
+  padding: 1em
+  font-size: $type-icon
 
 .data
   font-size: $type-data
   font-weight: $type-bold
+  font-family: $type-face
