@@ -2,12 +2,15 @@
   <div class="blue box">
     <div class="header">Users</div>
     <i class="fas fa-user"></i>
-    <div class="data"></div>
+    <div class="data"><%= @total_users %></div>
   </div>
 
-  <div class="blue box">
-    <div class="header">Computers</div>
-    <i class="fas fa-desktop"></i>
-    <div class="data"></div>
-  </div>
+  <%= link_to computers_path do %>
+    <div class="blue box">
+      <div class="header">Computers</div>
+      <i class="fas fa-desktop"></i>
+      <div class="data"><%= @total_computers %></div>
+    </div>
+  <% end %>
 </div>
+

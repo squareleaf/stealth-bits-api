@@ -1,0 +1,14 @@
+<table>
+  <tr>
+    <th>Display name</th>
+    <th>OS</th>
+    <th>OS version</th>
+  </tr>
+  <%= @computers.each do |computer| %>
+    <tr>
+      <td><%= computer.displayname %></td>
+      <td><%= computer.os %></td>
+      <td><%= computer.osVersion %></td>
+    </tr>
+  <% end %>
+</table>
