@@ -1,8 +1,7 @@
 class ComputersController < ApplicationController
-  include Rails::Pagination
-
   def index
-    @computers = HTTParty.get('https://sb-backendapi.azurewebsites.net/api/Computers')
+    page = params[:page] || 1
+    @computers = HTTParty.get("https://sb-backendapi.azurewebsites.net/api/Computers?per_page=10&page=#{page}")
   end
 
   def show

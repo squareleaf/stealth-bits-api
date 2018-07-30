@@ -1,6 +1,7 @@
 class UsersController < ApplicationController
   def index
-    @users = HTTParty.get('https://sb-backendapi.azurewebsites.net/api/Users')
+    page = params[:page] || 1
+    @users = HTTParty.get("https://sb-backendapi.azurewebsites.net/api/Users?per_page=10&page=#{page}")
   end
 
   def show
