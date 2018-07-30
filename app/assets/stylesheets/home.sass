@@ -4,16 +4,27 @@
   margin: 0 auto
   text-align: center
 
+a
+  text-decoration: none
+
 .blue
   background-color: $color-blue
+  color: $color-white
 
 .box
   display: inline-block
   width: 200px
   height: 300px
   padding: 1em
-  color: $color-white
   text-align: center
+
+.group-info
+  width: 200px
+  height: 300px
+
+.single-item
+  width: 400px
+  height: 450px
 
 .header
   font-size: $type-header
@@ -27,3 +38,37 @@
   font-size: $type-data
   font-weight: $type-bold
   font-family: $type-face
+
+.bio-info
+  font-size: $type-bio
+  margin-bottom: 1em
+
+.left
+  text-align: left
+
+.footer
+  margin-top: 2em
+  font-size: $type-header
+
+
+// ===========
+// Table styles
+
+table
+  width: 600px
+  margin: 0 auto
+  border-spacing: 0
+
+tr a
+  color: darken($color-blue, 10%)
+
+tr:nth-child(odd)
+  background-color: lighten($color-blue, 20%)
+  a
+    color: darken($color-white, 10%)
+
+th
+  padding: 1em
+
+td
+  padding: 0.5em

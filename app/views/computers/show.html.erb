@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="blue box single-item">
+    <div class="header"><%= @computer["id"] %></div>
+    <i class="fas fa-desktop"></i>
+    <div class="data"><%= @computer["displayname"] %></div>
+    <div><%= @computer["os"] %> &#149; <%= @computer["osVersion"] %></div>
+    <div><%= @computer["domain"] %></div>
+    <div><%= @computer["dnsHostName"] %> &#149; <%= @computer["ipAddress"] %></div>
+    <div><%= @computer["managerId"] %></div>
+  </div>
+
+  <div class="footer"><%= link_to "Return to computer list", computers_path %>  &#149; <%= link_to "Home", root_path %></div>
+</div>
+

@@ -4,6 +4,7 @@ class UsersController < ApplicationController
   end
 
   def show
-
+    id = params[:id]
+    @user = HTTParty.get("https://sb-backendapi.azurewebsites.net/api/Users/#{id}")
   end
 end

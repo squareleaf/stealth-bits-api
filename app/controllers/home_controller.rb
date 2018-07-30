@@ -1,6 +1,4 @@
 class HomeController < ApplicationController
-  include HTTParty
-
   require 'json'
 
   before_action :fetch_data_from_api

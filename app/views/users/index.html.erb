@@ -5,11 +5,11 @@
       <th class="left blue">OS</th>
       <th class="left blue">OS version</th>
     </tr>
-    <% @computers.each do |computer| %>
+    <% @users.each do |user| %>
       <tr>
-        <td class="left"><%= link_to computer["displayname"], computer_path(computer["id"]) %></td>
-        <td class="left"><%= computer["os"] %></td>
-        <td class="left"><%= computer["osVersion"] %></td>
+        <td class="left"><%= link_to user["displayname"], user_path(user["id"]) %></td>
+        <td class="left"><%= user["email"] %></td>
+        <td class="left"><%= user["lastLogon"] %></td>
       </tr>
     <% end %>
   </table>

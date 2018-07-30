@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="blue box single-item">
+    <div class="header"><%= @user["id"] %></div>
+    <i class="fas fa-user"></i>
+    <div class="data"><%= @user["displayname"] %></div>
+    <div class="bio-info">
+      <%= @user["department"] %> &#149; <%= @user["title"] %><br />
+      <%= @user["email"] %>
+    </div>
+    <div><%= @user["lastLogon"] %></div>
+    <div><%= @user["homeDirectory"] %> &#149; <%= @user["domain"] %></div>
+    <div><%= @user["managerId"] %></div>
+  </div>
+
+  <div class="footer"><%= link_to "Return to user list", users_path %> &#149; <%= link_to "Home", root_path %></div>
+</div>
